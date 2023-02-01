@@ -1,10 +1,10 @@
 pipeline{
-  agent any
-    stages{
-      stage("Build App"){
-        steps{
-          sh "mvn package"
-        }
-      }
-    }
+ agent any
+    stages{
+      stage('Build App'){
+       steps{
+          sh 'mvn package'
+        }
+      }
+    }
 }
